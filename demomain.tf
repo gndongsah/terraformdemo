@@ -5,10 +5,9 @@ terraform {
       version = "3.89.0"
     }
   }
-
-provider "azurerm" {
-    features {}
 }
+
+provider "azurerm" {}
 
 resource "azurerm_resource_group" "rg" {
   name     = "terraform-rg"
